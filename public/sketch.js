@@ -8,7 +8,7 @@ function setup() {
     b = random(0,255);
   createCanvas(900, 900);
   background(51);
-  socket = io.connect('https://doppler-distortion.herokuapp.com/');
+  socket = io.connect('http://localhost:3000');
   socket.on('mouse', function(data) {
       
       console.log("Got: " + data.x + " " + data.y + " " + data.r + " " + data.g + " " + data.b);
